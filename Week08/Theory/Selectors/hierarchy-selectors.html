@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hierarchy selectors</title>
+  <!-- Descendant selector -> Vazw keno (space) metaxy progonou apogonou -->
+  <!-- Child selector -> Anti keno vazoume to symvolo > -->
+  <!-- General sibling -> Me to sumvolo tilt ~ -->
+  <!-- Adjacent sibling -> Me to sumvolo + -->
+  <style>
+    /*
+    main h2 {
+      color: red;
+    }
+
+    header p {
+      text-decoration: line-through;
+    }
+
+    li p {
+      background-color: yellow;
+    }
+    */
+
+    /*
+    main > p {
+      color: red;
+    }
+    */
+
+    /*
+    h1 ~ p {
+      color: red;
+    }
+
+    p ~ p {
+      background-color: yellow;
+    }
+    */
+
+    h1 + p {
+      color: red;
+    }
+
+    .done + p {
+      background-color: yellow;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hello world!</h1>
+    <h2>Header subtitle</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quos voluptas odit qui delectus. Fuga quisquam ducimus, libero beatae quae adipisci! Placeat quae tempora earum. Est possimus iure minus blanditiis.</p>
+    <h3>H3 subtitle</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tempore asperiores nobis! Delectus culpa vitae labore voluptates soluta ab corrupti in tenetur exercitationem neque nostrum hic itaque officia, rem totam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis iure illo voluptatum ut accusantium maxime molestias animi, distinctio laborum magnam totam voluptas nemo dolorum eligendi nostrum! In, blanditiis accusamus?</p>
+  </header>
+  <main>
+    <h2>Main Title</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit rerum maxime praesentium! Ullam suscipit fugiat cumque, eius nesciunt explicabo animi at facere nobis, sint placeat, quibusdam minus maiores saepe ducimus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id natus dignissimos! Molestias soluta ratione eius officiis quo eaque dolorem, voluptatum repudiandae, distinctio, atque itaque minima quibusdam modi assumenda cupiditate!</p>
+    <ul>
+      <li>
+        <p>Item 1</p>
+      </li>
+      <li>
+        <p>Item 2</p>
+      </li>
+      <li>
+        <p>Item 3</p>
+      </li>
+      <li>
+        <p>Item 4</p>
+      </li>
+      <li>
+        <p>Item 5</p>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
